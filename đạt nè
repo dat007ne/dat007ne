@@ -1,0 +1,41 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    // Khai báo biến
+    int nam;
+
+    // Nhập năm
+    cout << "Nhap mot nam duong lich: ";
+    cin >> nam;
+
+    // Kiểm tra năm nhuận
+    if ((nam % 400 == 0) || (nam % 4 == 0 && nam % 100 != 0)) {
+        cout << nam << " la nam nhuan." << endl;
+    } else {
+        cout << nam << " khong phai la nam nhuan." << endl;
+    }
+
+    return 0;
+}
+
+
+
+
+
+
+
+Giải thích:
+	1.	Điều kiện năm nhuận:
+	•	Một năm là năm nhuận nếu:
+	•	Chia hết cho 400, hoặc
+	•	Chia hết cho 4 nhưng không chia hết cho 100.
+	2.	Chương trình sẽ kiểm tra điều kiện này và in thông báo tương ứng.
+
+Hướng dẫn chạy:
+	1.	Dán mã trên vào Dev-C++.
+	2.	Nhấn Compile & Run.
+	3.	Nhập năm cần kiểm tra, ví dụ: 2024 hoặc 1900.
+	4.	Kết quả sẽ hiển thị là năm nhuận hoặc không phải năm nhuận.
+
+Nếu bạn có bài toán tiếp theo hoặc muốn mở rộng chương trình, cứ nói nhé!
